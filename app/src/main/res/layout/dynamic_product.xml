@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4.0dp"
+    android:layout_marginLeft="8.0dp"
+    android:layout_marginRight="8.0dp"
+    android:layout_marginTop="4.0dp"
+    card_view:cardCornerRadius="2dp">
+
+    <LinearLayout android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/loading_image"/>
+
+        <LinearLayout android:id="@+id/layout_item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:weightSum="2">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/txt_brandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item Name "
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_typeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item descriptions"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_quantityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:background="@drawable/background_corner"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="textStart"
+                    tools:ignore="RtlCompat">
+
+                    <Spinner
+                        android:id="@+id/sp_quantityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:minWidth="@dimen/_40sdp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="MRP: "
+                            android:textColor="#FFF80303"
+                            android:textSize="12dp"
+                            card_view:layout_constraintStart_toStartOf="parent"
+                            card_view:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/txt_snappelPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="1000"
+                            android:textColor="#FFF80303"
+                            android:textSize="12dp"
+                            card_view:layout_constraintStart_toEndOf="@+id/textView2"
+                            card_view:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/rupee"
+                                android:textColor="#4CAF50"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                card_view:layout_constraintStart_toEndOf="@+id/txt_snappelPrice"
+                                card_view:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txt_sellingPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1000"
+                                android:textColor="#4CAF50"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                card_view:layout_constraintStart_toEndOf="@+id/textView3"
+                                card_view:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/divider"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:background="#F80303"
+                            card_view:layout_constraintBottom_toBottomOf="@+id/txt_snappelPrice"
+                            card_view:layout_constraintEnd_toEndOf="@+id/txt_snappelPrice"
+                            card_view:layout_constraintStart_toEndOf="@+id/textView2"
+                            card_view:layout_constraintTop_toTopOf="@+id/txt_snappelPrice" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/button_corner"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingRight="@dimen/_2sdp"
+                        android:text="ADD"
+                        android:textSize="13dp"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_carditem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_20sdp"
+                        card_view:layout_constraintEnd_toEndOf="parent"
+                        card_view:layout_constraintTop_toTopOf="parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_minus"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:background="@drawable/shapeforadd"
+                            android:text="-"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_prno"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:gravity="center"
+                            android:layout_gravity="center_horizontal"
+                            android:text="1"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_plus"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/shapeforadd"
+                            android:gravity="center_horizontal"
+                            android:text="+"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_15sdp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!--
+               <ImageView android:id="@+id/ic_wishlist"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_weight="0.3"
+                          android:layout_gravity="center_vertical"
+                          android:src="@drawable/ic_favorite_border_black_18dp"/>
+               -->
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_discount"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:text="% Off"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</android.support.v7.widget.CardView>
+

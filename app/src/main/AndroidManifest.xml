@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tm.tarvemart">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <!-- <activity android:name=".Anoopdemo"></activity> -->
+        <activity android:name="com.tm.tarvemart.mainUI.WalletHistoryActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.Contact_UsActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.AddAndEditAddress" />
+        <activity android:name="com.tm.tarvemart.mainUI.WalletActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.NoInternetConnectionActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.MyOrderDetails" />
+        <activity android:name="com.tm.tarvemart.mainUI.MyOrderActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.ProfileActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.SearchActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.ProductDetails" />
+        <activity android:name="com.tm.tarvemart.mainUI.CartActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.AddressList" />
+        <activity android:name="com.tm.tarvemart.mainUI.DeliveryAddress" />
+        <activity
+            android:name="com.tm.tarvemart.mainUI.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tm.tarvemart.WelcomeActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.SignupActivity" />
+        <activity android:name="com.tm.tarvemart.mainUI.ValidateOtp" />
+        <activity android:name="com.tm.tarvemart.mainUI.SendOtpActivity" />
+        <activity android:name="com.tm.tarvemart.MoneyTransferActivity" />
+        <activity
+            android:name="com.tm.tarvemart.mainUI.ActivityProduct"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+        <activity
+            android:name="com.tm.tarvemart.mainUI.Dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.tm.tarvemart.MainActivity" /> <!-- Firebase Notifications -->
+        <service android:name="com.tm.tarvemart.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.tm.tarvemart.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <activity android:name = "com.tm.tarvemart.PayMentGateWay" />
+        <activity android:name="com.razorpay.CheckoutActivity" />
+        <!-- Add razorpay your API key here -->
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_qF4RaReCtgx65X"/>
+    </application>
+
+</manifest>

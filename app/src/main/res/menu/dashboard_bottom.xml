@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Categories" android:id="@+id/bottom_categories" android:icon="@drawable/ic_category"/>
+    <item android:title="Search" android:id="@+id/bottom_Search" android:icon="@drawable/ic_search"/>
+    <item android:title="Home" android:id="@+id/bottom_Home" android:icon="@drawable/ic_home_black_24dp" android:checked="true"/>
+    <item android:title="Offers" android:id="@+id/bottom_Coupon" android:icon="@drawable/ic_coupon_fill"/>
+    <item android:title="Basket" android:id="@+id/bottom_Basket" android:icon="@drawable/ic_basket_w"/>
+</menu>

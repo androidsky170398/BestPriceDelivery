@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#eb6325</color>-->
+<!--    <color name="colorPrimaryDark">#d25215</color>-->
+
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#78CE7C</color>
+
+    <color name="colorAccent">#DF041E</color>
+    <color name="Parrotgreen">#78CE7C</color>
+    <color name="orange">#4CAF50</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="black">#000000</color>
+    <color name="lightgray">#eceaed</color>
+    <color name="Red">#4CAF50</color>
+    <color name="stay_color">#999999</color>
+    <color name="redone">#F00220</color>
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen1</item>
+    </array>
+    <color name="failure">#d30915</color>
+
+    <color name="grey">#D6D6D6</color>
+</resources>
+
+<!--</resources>-->
+<!--    &lt;!&ndash;    <color name="colorPrimary">#eb6325</color>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <color name="colorPrimaryDark">#d25215</color>&ndash;&gt;-->
+
+<!--<color name="colorPrimary">#4CAF50</color>-->
+<!--<color name="colorPrimaryDark">#78CE7C</color>-->
+
+<!--<color name="colorAccent">#DF041E</color>-->
+<!--<color name="Parrotgreen">#78CE7C</color>-->
+<!--<color name="orange">#4CAF50</color>-->
+<!--<color name="white">#FFFFFF</color>-->
+<!--<color name="transparent">#00ffffff</color>-->
+<!--<color name="black">#000000</color>-->
+<!--<color name="lightgray">#eceaed</color>-->
+<!--<color name="Red">#4CAF50</color>-->
+<!--<color name="stay_color">#999999</color>-->
+<!--<color name="redone">#F00220</color>-->

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "956062511742",
+    "firebase_url": "https://bestpricedelivery-a2e2f.firebaseio.com",
+    "project_id": "bestpricedelivery-a2e2f",
+    "storage_bucket": "bestpricedelivery-a2e2f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:956062511742:android:3d0f9fabe12962ff",
+        "android_client_info": {
+          "package_name": "com.tm.tarvemart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "956062511742-c7nv9lt3ptpb71r9hlkote0tqpon371l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tm.tarvemart",
+            "certificate_hash": "c29656eaa9b977b523937cfda0086fb1795b8b37"
+          }
+        },
+        {
+          "client_id": "956062511742-g31ol7f43kop15u3aj4q9k8r0ub7dg1r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrreOwSGLvZkXejpTKBG6jwsZRJos2kvI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "956062511742-g31ol7f43kop15u3aj4q9k8r0ub7dg1r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

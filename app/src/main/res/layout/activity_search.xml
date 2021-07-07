@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="Search Products"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/_3sdp"
+            android:drawablePadding="@dimen/_5sdp"
+            android:minHeight="@dimen/_30sdp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#43A047"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:minHeight="@dimen/_30sdp"
+            android:text="Search"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

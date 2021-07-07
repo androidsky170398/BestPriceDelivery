@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_wheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:text="Rotate the wheel and get offers"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:src="@drawable/ic_cancel" />
+        </LinearLayout>
+
+        <com.adefruandta.spinningwheel.SpinningWheelView
+            android:id="@+id/wheel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_350sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            app:wheel_arrow_color="@android:color/black"
+            app:wheel_arrow_height="35dp"
+            app:wheel_arrow_width="20dp"
+            app:wheel_colors="@array/rainbow_dash"
+            app:wheel_items="@array/dummy"
+            app:wheel_stroke_color="@android:color/black"
+            app:wheel_stroke_width="2dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_offerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/frame3"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_offers"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_2sdp"
+            android:text="20%"
+            android:gravity="center"
+            android:fontFamily="serif-monospace"
+            android:textSize="@dimen/_80sdp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:text="off on your today's shopping "
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="@dimen/_20sdp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* This offer will be shown only one time a day. "
+            android:gravity="center"
+            android:textColor="@color/redone"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Parrotgreen"
+        android:textColor="@color/white"
+        android:text="Get Offer" />
+</LinearLayout>

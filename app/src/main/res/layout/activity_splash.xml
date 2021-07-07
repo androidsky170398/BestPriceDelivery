@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/white"
+    android:id="@+id/layout_linear"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="220dp"
+            android:src="@drawable/logoone"/>
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text=" 𝕋𝕒𝕣𝕧𝕖 𝕄𝕒𝕣𝕥"-->
+        <!--android:textStyle="bold|italic"-->
+        <!--android:textSize="48dp"-->
+        <!--android:textColor="@color/gen_white"/>-->
+
+        <ImageView android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_apps_black_48dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
