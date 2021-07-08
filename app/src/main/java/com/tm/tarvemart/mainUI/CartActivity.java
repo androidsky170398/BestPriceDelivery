@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -161,9 +162,11 @@ public class CartActivity extends AppCompatActivity {
         for (int i = 0; i < list_Products.size(); i++) {
             totalPrice += Double.parseDouble(list_Products.get(i).getSelling_price()) * Double.parseDouble(list_Products.get(i).getSelected_quantity());
             TotalSave += Double.parseDouble(list_Products.get(i).getPrice()) * Double.parseDouble(list_Products.get(i).getSelected_quantity());
+
         }
         tv_totalRs.setText("Rs " + TotalSave);
         tv_subtotalRs.setText("Rs " + totalPrice);
+
 
         //login perference
         price_preference = context.getSharedPreferences("price_preference", MODE_PRIVATE);
