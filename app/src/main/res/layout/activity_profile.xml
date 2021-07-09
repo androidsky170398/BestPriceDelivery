@@ -34,7 +34,7 @@
         android:id="@+id/username_blue_img"
         android:layout_marginBottom="100dp"
         android:layout_marginLeft="247dp"
-        android:src="@drawable/ic_plus_red"/>
+        app:srcCompat="@drawable/ic_plus_red"/>
 </RelativeLayout>
 
             <android.support.design.widget.TextInputLayout

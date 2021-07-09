@@ -199,7 +199,7 @@ public class AdapterForProduct extends RecyclerView.Adapter<AdapterForProduct.VH
                 @Override
                 public void onClick(View v) {
                     count = (Integer.parseInt(vh.txt_prno.getText().toString())) + 1;
-                    Toast.makeText(context, "count:"+count, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, "count:"+count, Toast.LENGTH_SHORT).show();
                     if (priceDataList != null && priceDataList.size() > 0) {
                         for (int j = 0; j < priceDataList.size(); j++) {
                             if (vh.sp_quantityName.getSelectedItem().toString().trim().equalsIgnoreCase(priceDataList.get(j).getQuantity_name().trim())) {
